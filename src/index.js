@@ -1,14 +1,5 @@
-import express from "express";
-import employeesRoutes from "./routes/employees.routes.js"
-import employeesRoutesIndex from "./routes/index.routes.js";
-
-// app express
-const app = express();
-app.use(express.json())
-
-// import routes middlewares
-app.use("/api",employeesRoutes)
-app.use(employeesRoutesIndex)
+import { PORT } from "./config.js";
+import app from "./app.js";
 
 // config server
-app.listen("3000")
+app.listen(PORT)
