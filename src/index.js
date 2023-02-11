@@ -1,5 +1,4 @@
 import { PORT } from "./config.js";
-import app from "./app.js";
 import express from "express";
 import employeesRoutes from "./routes/employees.routes.js"
 import employeesRoutesIndex from "./routes/index.routes.js";
